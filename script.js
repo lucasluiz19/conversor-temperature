@@ -7,17 +7,14 @@ function exect() {
     if(infoTemp==""){
         alert("entre com um numero")
     }else if (seletcTemp[0].checked){
-        function soma() {
-            
-            
-        }
+        let soma=(infoTemp * 9/5) + 32
         
-        resultado.innerHTML=`${infoTemp} graus celsius`
+        resultado.innerHTML=`${String(infoTemp.toFixed(2)).replace(".",",")}°C são ${soma.toFixed(2).replace(".",",") } graus fahrenheit`
         
     }if(seletcTemp[1].checked){
-       (infoTemp -32) * 5/9
+        let soma=(infoTemp -32)*5/9 
     
-        resultado.innerHTML=`${infoTemp} graus fahrenheit`
+        resultado.innerHTML=`${String(infoTemp.toFixed(2)).replace(".",",")}°F são ${soma.toFixed("2").replace(".",",") } graus Celsius`
 
     }
     
